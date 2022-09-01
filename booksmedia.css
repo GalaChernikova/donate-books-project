@@ -1,0 +1,597 @@
+@media (max-width: 1920px) {
+    .donate {
+        justify-content: space-around;
+        background-position-x: 520px;
+        background-position-y: -50px;
+    }
+}
+
+@media (max-width: 1600px) {
+    .donate {
+        background-position-x: 426px;
+        background-position-y: -52px;
+    }
+
+    .donate-info {
+        padding-top: 255px;
+        padding-left: 170px;
+    }
+}
+
+@media (max-width: 1350px) {
+    .logo {
+        padding-left: 20px;
+    }
+
+
+    .donate {
+        background-position-x: 326px;
+        background-position-y: 0;
+    }
+
+    .donate-info {
+        max-width: 570px;
+        padding-left: 55px;
+
+    }
+
+    h1 {
+        font-size: 56px;
+        background-position: 0 35px;
+    }
+
+    .donate-numbers {
+        margin-left: 0;
+        margin-right: 50px;
+    }
+
+    .work {
+        justify-content: center;
+    }
+
+    .work img {
+        width: 80%;
+    }
+
+    .work-info {
+        max-width: 420px;
+        padding-right: 30px;
+    }
+
+    .work h2,
+    .mission-info h2,
+    .partners h2,
+    .involved-info h2 {
+        font-size: 40px;
+    }
+
+    .work-info-list li {
+        font-size: 20px;
+    }
+
+    .trees-planted,
+    .books-donated,
+    .dollars {
+        font-size: 20px;
+        max-width: 150px;
+    }
+
+}
+
+@media (max-width: 1200px) {
+    .logo {
+        padding-left: 30px;
+        margin-right: 0;
+    }
+
+    .header-nav {
+        margin-left: 0;
+    }
+
+    .header-nav-list li {
+        padding: 5px;
+    }
+
+    .header-nav-list a {
+       padding-right: 10px; 
+    }
+    
+    .donate {
+    justify-content: space-between;
+    }
+
+    .donate-info {
+        max-width: 500px;
+        padding-top: 200px;
+        padding-left: 100px;
+    }
+
+    .donate-numbers {
+        margin-left: 00px;
+        margin-right: 70px;
+    }
+
+    .info .trees,
+    .info .edu,
+    .info .charity {
+        max-width: 300px;
+    }
+
+    .mission {
+        justify-content: space-around;
+    }
+
+    .mission-info {
+        max-width: 400px;
+        margin-right: 0;
+    }
+
+    .mission-stat {
+        max-width: 400px;
+    }
+}
+
+@media (max-width: 1000px) {
+    .all-nav {
+        padding: 0 10px;
+    }
+
+    .logo {
+        max-width: 150px;
+        margin-top: 1px;
+        padding-left: 10px;
+    }
+
+    .donate-info {
+        padding-top: 150px;
+        padding-left: 80px;
+    }
+
+    h1 {
+        font-size: 46px;
+        background-position: 0 25px;
+    }
+
+    .donate-info p {
+        max-width: 390px;
+    }    
+
+    .donate-numbers {
+        max-width: 150px;
+        margin-right: 50px;
+    }
+
+    .donate-numbers::after {
+        right: 25px;
+    }
+
+    .donate-numbers h2 {
+        max-width: 150px;
+        font-size: 34px;
+    }
+
+    .info .trees,
+    .info .edu,
+    .info .charity {
+        max-width: 280px;
+    }    
+
+    .partners-list li a img {
+        padding: 10px;
+    }
+
+    .involved-info {
+        background-size: 120%;
+        margin: 0;
+        padding: 0;
+    }
+
+    .involved-info h2 {
+        margin-bottom: 30px;
+    }
+
+    .involved-info p {
+        max-width: 600px;
+        margin-bottom: 30px;
+    }
+
+    .involved-info input {
+        margin-bottom: 50px;
+    }
+}
+
+@media (max-width: 850px) {
+    header {
+        justify-content: space-around;
+    }
+
+    .header-nav {
+        display: none;
+    }
+
+    .all-nav {
+        justify-content: space-evenly;
+    }
+
+    .logo {
+        max-width: 200px;
+    }
+
+    .nav-button {
+        display: block;
+        padding-left: 30px;
+    }
+
+    .mobile-nav-active {
+        display: flex;
+    }
+
+    .cart {
+        
+        padding: 20px;
+    }
+
+    .cart img {
+        max-width: 50px;
+        width: 100%;
+    }
+
+    h1 {
+        font-size: 36px;
+        background-position: 0 15px;
+        background-size: 50%;
+    }
+
+    .info {
+        flex-direction: column;
+        margin-top: 40px;
+    }
+
+    .info .trees,
+    .info .edu,
+    .info .charity {
+        margin-bottom: 40px;
+    }
+
+    .info h3 {
+        font-size: 28px;
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
+
+    .work {
+        flex-direction: column;
+        justify-content: center;
+        margin-top: 0;
+    }
+
+    .work-img,
+    .work-info,
+    .work-info input {
+        margin-right: auto;
+        margin-left: auto;
+    }
+
+    .work-img {
+        margin-bottom: 40px;
+        max-width: 600px;
+    }
+
+    .work-info {
+        padding: 0;
+    }
+
+    .mission {
+        flex-direction: column;
+        margin-bottom: 60px;
+    }
+
+    .mission-info {
+        max-width: 500px;
+        margin-bottom: 50px;
+    }
+
+    .mission-stat {
+        max-width: 500px;
+    }
+
+    .partners h2 {
+        margin-top: 0;
+        margin-bottom: 20px;
+    }
+
+    .partners-list {
+        display: none;
+    }
+
+    .swiper {
+        display: block;
+    }
+
+    .involved-info h2 {
+        margin-bottom: 25px;
+        font-size: 36px;
+    }
+
+    .involved-info p {
+        max-width: 600px;
+        margin-bottom: 20px;
+    }
+
+    .involved-info input {
+        margin-bottom: 30px;
+    }
+
+    .contacts {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    address {
+        justify-content: center;
+    }
+
+    .footer-nav {
+        flex-direction: column-reverse;
+        justify-content: center;
+    }
+
+    .nav-company {
+        margin-right: 100px;
+    }
+
+    .download {
+        margin-bottom: 40px;
+    }
+
+    .download h4 {
+        text-align: center;
+    }
+
+    .download-list li {
+        margin-right: 0;
+        padding: 0 30px;
+    }
+
+}
+
+@media (max-width: 700px) {
+    .donate {
+        background-position: 0 0;
+        background-size: 150%;
+    }
+
+    .donate-info {
+        max-width: 420px;
+        padding-top: 280px;
+        padding-left: 30px;
+    }
+
+    h1 {
+        max-width: 300px;
+        background-position: 0 25px;
+    }
+
+    .donate-info p {
+        max-width: 300px;
+    }   
+    
+    .donate-buttons {
+        max-width: 220px;
+    }
+
+    .donate-buttons a {
+        display: none;
+    }
+
+    .swiper-slide img {
+        max-width: 400px;
+    }
+
+    .involved-info {
+        background-size: 150%;
+    }
+
+    .involved-info h2 {
+        margin-bottom: 20px;
+    }
+
+    .involved-info p {
+        max-width: 400px;
+        margin-bottom: 20px;
+    }
+
+    .involved-info input {
+        margin-bottom: 20px;
+    }
+}
+
+@media (max-width: 600px) {
+    .all-nav {
+        padding: 0;
+    }
+
+    .donate {
+        flex-direction: column-reverse;
+        background-position-x: -100px;
+        background-position-y: 0;
+        background-size: 150%;
+    }
+
+    .donate-info {
+        max-width: 450px;
+        width: 100%;
+        padding-top: 0;
+        padding-right: 0;
+
+        margin-right: auto;
+        margin-left: auto;
+    }
+
+    h1 {
+        max-width: 500px;
+        font-size: 48px;
+        margin-bottom: 30px;
+    }
+
+    .donate-info p {
+        max-width: 500px;
+    }
+
+    .donate-numbers {
+        margin-top: 400px;
+        margin-bottom: 30px;
+        margin-left: 300px;
+    }
+
+    .involved-info {
+        background-size: 200%;
+    }
+}
+
+@media (max-width: 500px) {
+    .donate {
+        background-size: 180%;
+    }
+
+    .donate-info {
+        max-width: 380px;
+    }
+
+    h1 {
+        font-size: 36px;
+    }
+
+    .donate-buttons {
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .donate-numbers {
+        margin-right: 0;
+        margin-left: 300px;
+    }
+
+    .donate-numbers h2 {
+        font-size: 30px;
+    }
+
+    .work-info {
+        max-width: 300px;
+    }
+
+    .mission-info {
+        max-width: 400px;
+    }
+
+    .mission-stat {
+        max-width: 380px;
+    }
+
+    .trees-planted-scale,
+    .books-donated-scale,
+    .dollars-scale {
+        max-width: 200px;
+    }
+
+    .partners-list li {
+        max-width: 300px;
+    }
+
+    .involved-info {
+        background-size: 270%;
+    }
+
+    .involved-info p {
+        max-width: 300px;
+    }
+
+}
+
+@media (max-width: 420px) {
+    .donate-info {
+        max-width: 350px;
+        padding: 0;
+    }
+
+    .donate-numbers {
+        margin-left: 220px;
+        margin-top: 340px;
+    }
+
+    .donate-numbers::after {
+        width: 64px;
+        height: 64px;
+    }
+
+    .info .trees,
+    .info .edu,
+    .info .charity {
+        padding: 0;
+    }
+
+    .mission-info,
+    .mission-stat {
+        max-width: 300px;
+    }
+
+    .swiper-slide img {
+        max-width: 300px;
+    }
+
+    .involved-info {
+        background-size: 300%;
+    }
+
+    .contacts p {
+        max-width: 300px;
+        text-align: center;
+    }
+
+    .nav-company {
+        margin-right: 50px;
+    }
+
+    .download-list li {
+        padding: 0 10px;
+    }
+
+    .copyright p {
+        max-width: 300px;
+    }
+}
+
+@media (max-width: 375px) {
+    .nav-button {
+        padding-left: 10px;
+    }
+
+    .logo {
+        max-width: 180px;
+    }
+
+    .cart {
+        padding: 10px;
+    }
+
+    .donate-info {
+        max-width: 290px;
+    }
+
+    .donate-numbers {
+        margin-left: 180px;
+    }
+
+    .mission-info,
+    .mission-stat {
+        max-width: 270px;
+    }
+
+    .involved-info {
+        background-size: 320%;
+    }
+
+    .involved-info h2 {
+        font-size: 30px;
+    }
+}

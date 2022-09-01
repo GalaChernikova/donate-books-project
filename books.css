@@ -1,0 +1,997 @@
+/* base
+font: 'Begum Bold' - main pic "74 604"
+      'Begum Semibold' - h1-h6
+      'Poppins', sans-serif; - logo, text
+
+color: #000000 - text
+       #97BC59 - green circle, line
+       #ECB942 - yellow buttons, circle, line
+       #B0CEF1 - blue circle, line
+       #E5E5E5 - grey line
+*/ 
+* {
+    margin: 0;
+    padding: 0;
+}
+
+@font-face {
+    font-family: "Begum Bold";
+    src: url(./fonts/Begum-W03-Bold-1.ttf) format("truetype");
+    font-style: normal; 
+    font-weight: normal;
+}
+
+@font-face {
+    font-family: "Begum Semibold";
+    src: url(./fonts/Begum\ W03\ Semibold.ttf) format("truetype");
+    font-style: normal; 
+    font-weight: normal;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    max-width: 100%;
+}
+
+img {
+    display: block;
+    max-width: 100%;
+}
+
+li {
+    list-style-type: none;
+}
+
+a {
+    cursor: pointer;
+}
+
+
+
+/* header */
+header {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+
+    position: fixed;
+    z-index: 9;
+
+    background-color: #FFFFFF;
+    opacity: 0.9;
+}
+
+.header-container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+
+    padding-top: 20px;
+    padding-bottom: 30px;
+
+
+}
+
+.all-nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+
+    width: 100%;
+
+}
+
+.logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 200px;
+    width: 100%;
+
+    font-size: 24px;
+}
+
+.logo a {
+    display: flex;
+    color: black;
+    text-decoration: none;
+}
+
+.logo h3 {
+    margin-left: 5px;
+}
+
+.logo p {
+    font-weight: 200;
+    font-size: 28px;
+}
+
+.header-nav {
+    width: 100%;
+}
+
+.header-nav-list {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+
+    
+
+}
+
+.header-nav-list li {
+    padding: 10px;
+}
+
+.header-nav-list a {
+    font-weight: 600;
+    font-size: 16px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+
+    display: inline-block;
+    color: black;
+    text-decoration: none;
+}
+
+.cart {
+    display: block;
+    max-width: 40px;
+    width: 100%;
+
+    padding: 10px;
+}
+
+
+
+
+/* nav button */
+.nav-button {
+    position: relative;
+    z-index: 9;
+    display: none;
+    height: 25px;
+    border: none;
+    padding: 0;
+    background: transparent;
+    cursor: pointer;
+}
+
+.nav-button:focus,
+.nav-button:active {
+    outline: none;
+}
+
+/* X */
+.nav-button-close .nav-button-icon {
+    background-color: transparent;
+}
+
+.nav-button-close .nav-button-icon::before {
+    transform: rotate(45deg);
+    top: 0;
+}
+
+.nav-button-close .nav-button-icon::after {
+    transform: rotate(-45deg);
+    top: 0;
+}
+
+/* nav icon */
+.nav-button-icon {
+    display: block;
+    position: relative;
+    background-color: black;
+    width: 42px;
+    height: 5px;
+    border: none;
+}
+
+.nav-button-icon::before {
+    position: absolute;
+    left: 0;
+    top: -10px;
+    content: '';
+    display: block;
+    background-color: black;
+    width: 42px;
+    height: 5px;
+}
+
+.nav-button-icon::after {
+    position: absolute;
+    left: 0;
+    bottom: -10px;
+    content: '';
+    display: block;
+    background-color: black;
+    width: 42px;
+    height: 5px;
+}
+
+
+/* mobile nav */
+.mobile-nav {
+    position: fixed;
+    z-index: 8;
+    display: none;
+    flex-direction: column;
+    justify-content: space-between;
+
+    top: 0;
+    left: 0;
+    width: 320px;
+    height: 100%;
+    background-color: white;
+    opacity: 1;
+    padding: 70px 70px 50px 30px;
+} 
+
+.mobile-nav .nav {
+    display: block;
+    padding-top: 40px;
+    padding-left: 40px;
+}
+
+.mobile-nav .nav ul {
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.mobile-nav .nav ul li {
+    margin: 0;
+    margin-bottom: 25px;
+}
+
+.mobile-nav .nav ul li a {
+    text-decoration: none;
+    color: black;
+}
+
+
+
+/* main */
+/* donate */
+.donate {
+    position: relative;
+    z-index: 8;
+
+    background-image: url("./images/mainimg.png");
+    background-repeat: no-repeat;
+    background-position: bottom right;
+    background-size: contain;
+
+    width: 100%;
+
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+
+.donate-info {
+    max-width: 670px;
+    width: 100%;
+
+    padding-top: 285px;
+    padding-bottom: 90px;
+    padding-left: 270px;
+    padding-right: 55px;
+}
+
+h1 {
+    background-image: url("./images/titleline.svg");
+    background-repeat: no-repeat;
+    background-position: 0 40px;
+
+    font-family: 'Begum Semibold';
+    font-size: 64px;
+
+    margin-bottom: 48px;
+}
+
+.donate-info p {
+    max-width: 590px;
+    width: 100%;
+
+    font-size: 18px;
+
+    margin-bottom: 48px;
+}
+
+.donate-info input {
+
+
+    background-color: #ECB942;
+    border: none;
+    border-radius: 8px;
+    box-shadow: 0px 4px 16px 5px #E5E5E5;
+
+    font-size: 18px;
+    font-weight: 500;
+
+    padding: 15px 45px;
+
+    margin-right: 50px;
+}
+
+.donate-info a {
+    background-image: url("./images/arrowdown.svg");
+    background-repeat: no-repeat;
+    background-position: center right;
+    background-size: contain;
+
+    display: block;
+    margin: 0;
+    max-width: 110px;
+    width: 100%;
+
+    font-size: 18px;
+
+    display: inline-block;
+    color: black;
+    text-decoration: none;
+}
+
+.donate-buttons {
+    display: flex;
+    align-items: center;
+}
+
+.donate-numbers {
+    position: relative;
+    z-index: 2;
+
+    display: flex;
+    flex-direction: column;
+
+    
+
+    max-width: 200px;
+    width: 100%;
+
+    margin-top: auto;
+    margin-bottom: 90px;
+    margin-left: 200px;
+}
+
+.donate-numbers h2 {
+    font-family: 'Begum Bold';
+    font-size: 38px;
+}
+
+.donate-numbers::after {
+    position: absolute;
+    z-index: -1;
+
+    content: '';
+    width: 96px;
+    height: 96px;
+
+    background-color: #ECB942;
+    border-radius: 100%;
+    top: -10px;
+    right: 45px;
+}
+
+.donate-numbers p {
+    font-family: 'Poppins', sans-serif;
+    font-size: 16px;
+
+    width: 100%;
+}
+
+
+/* info */
+.info {
+    display: flex;
+
+    max-width: 1140px;
+    width: 100%;
+
+    justify-content: center;
+    align-items: center;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 90px;
+    margin-bottom: 45px;
+
+    font-size: 18px;
+    text-align: center;
+}
+
+.info .trees,
+.info .edu,
+.info .charity {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    max-width: 360px;
+    width: 100%;
+
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.info p {
+    font-size: 18px;
+}
+
+.info h3 {
+    font-family: 'Begum Semibold';
+    font-size: 36px;
+
+    padding-top: 25px;
+    padding-bottom: 40px;
+}
+
+.info a {
+    font-weight: 600;
+    color: black;
+
+}
+
+
+/* work */
+.work {
+    display: flex;
+
+    width: 100%;
+
+    justify-content: space-around;
+    align-items: center;
+    
+    margin-top: 25px;
+    margin-bottom: 130px;
+    margin-right: auto;
+    margin-left: auto;
+
+    font-size: 18px;
+    text-align: start;
+}
+
+.work-info {
+    display: flex;
+    flex-direction: column;
+
+    max-width: 485px;
+    width: 100%;
+}
+
+.work-info h2 {
+    font-family: 'Begum Semibold';
+    font-size: 48px;
+
+    margin-bottom: 30px;
+
+    background-image: url("./images/workline.svg");
+    background-repeat: no-repeat;
+    background-position: 100px 25px;
+}
+
+.work-info-list li {
+    display: flex;
+
+    max-width: 420px;
+    width: 100%;
+
+    font-size: 24px;
+    font-weight: 600;
+
+    margin-bottom: 30px;
+}
+
+.work-info-list li img {
+    margin: 0;
+    margin-right: 25px;
+
+    max-width: 50px;
+}
+
+.work-info p {
+    max-width: 420px;
+    max-width: 100%;
+
+    margin-bottom: 30px;
+}
+
+.work-info input {
+    background-color: #ECB942;
+    border: none;
+    border-radius: 8px;
+    box-shadow: 0px 4px 16px 5px #e5e5e5;
+    font-size: 18px;
+    font-weight: 500;
+    padding: 15px 45px;
+
+    max-width: 200px;
+    width: 100%;
+}
+
+
+/* mission */
+.mission {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    margin-right: auto;
+    margin-left: auto;
+    margin-bottom: 85px;
+    margin-top: 139px;
+    
+    max-width: 1140px;
+    width: 100%;
+}
+
+.mission-info {
+    max-width: 475px;
+    width: 100%;
+    margin-right: 40px;
+
+    
+}
+
+.mission-info h2 {
+    font-family: 'Begum Semibold';
+    font-size: 48px;
+
+    margin-bottom: 30px;
+
+    background-image: url("./images/missionline.svg");
+    background-repeat: no-repeat;
+    background-position: 100px 25px;
+}
+
+.mission-info p {
+    margin-right: 10px;
+    font-size: 18px;
+}
+
+.mission-stat {
+    max-width: 500px;
+    width: 100%;
+}
+
+.mission-stat-list {
+    display: flex;
+    flex-direction: column;
+}
+
+.mission-stat-list li {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+
+    margin-bottom: 35px;
+}
+
+.trees-planted,
+.books-donated,
+.dollars {
+    position: relative;
+    z-index: 2;
+
+    font-family: 'Begum Semibold';
+    font-size: 26px;
+
+    max-width: 200px;
+    width: 100%;
+
+    padding-right: 20px;
+}
+
+.trees-planted::before {
+    position: absolute;
+    z-index: -1;
+    content: '';
+    width: 56px;
+    height: 56px;
+
+    background-color: #97BC59;
+    border-radius: 100%;
+    top: -10px;
+    left: -20px;
+}
+
+.books-donated::before {
+    position: absolute;
+    z-index: -1;
+    content: '';
+    width: 56px;
+    height: 56px;
+
+    background-color: #ECB942;
+    border-radius: 100%;
+    top: -10px;
+    left: -20px;
+}
+
+.dollars::before {
+    position: absolute;
+    z-index: -1;
+    content: '';
+    width: 56px;
+    height: 56px;
+
+    background-color: #B0CEF1;
+    border-radius: 100%;
+    top: -10px;
+    left: -20px;
+}
+
+.trees-planted p,
+.books-donated p,
+.dollars p {
+    display: flex;
+    flex-direction: column;
+
+    font-size: 18px;
+}
+
+.trees-planted-scale,
+.books-donated-scale,
+.dollars-scale {
+    max-width: 300px;
+    width: 100%;
+}
+
+.trees-planted-scale .progress-container {
+    position: relative;
+    display: inline-block;
+    background: #E5E5E5;
+    height: 16px;
+    border-radius: 6px;
+    overflow: hidden;
+    width: 100%;
+}
+
+.trees-planted-scale .progress-container::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 40%;
+    background: #97BC59;
+}
+
+.books-donated-scale .progress-container {
+    position: relative;
+    display: inline-block;
+    background: #E5E5E5;
+    height: 16px;
+    border-radius: 6px;
+    overflow: hidden;
+    width: 100%;
+}
+
+.books-donated-scale .progress-container::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 50%;
+    background: #ECB942;
+}
+
+.dollars-scale .progress-container {
+    position: relative;
+    display: inline-block;
+    background: #E5E5E5;
+    height: 16px;
+    border-radius: 6px;
+    overflow: hidden;
+    width: 100%;
+}
+
+.dollars-scale .progress-container::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 30%;
+    background: #B0CEF1;
+}
+
+
+/* partners */
+.partners {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    width: 100%;
+
+    margin-right: auto;
+    margin-left: auto;
+
+}
+
+.partners h2 {
+    font-family: 'Begum Semibold';
+    font-size: 48px;
+
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+.partners-list {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.partners-list li {
+    max-width: 400px;
+    width: 100%;
+
+    padding: 20px;
+}
+
+.partners-list li a {
+    padding: 10px;
+
+    display: inline-block;
+    color: black;
+    text-decoration: none;
+}
+
+.partners-list li a img {
+    padding: 40px;
+}
+
+
+/* carousel */
+.swiper {
+    display: none;
+    width: 100%;
+    height: 100%;
+}
+
+.swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    background: #fff;
+
+    /* Center slide text vertically */
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    -webkit-align-items: center;
+    align-items: center;
+}
+
+.swiper-slide img {
+    display: block;
+    width: 600px;
+    height: 100%;
+    object-fit: cover;
+    padding: 60px 0;
+
+    background-image: url("./images/partnersbckgr.svg");
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+
+
+
+/* involved */
+.involved {
+    padding-top: 100px;
+
+    background-image: url("./images/decorinv.png");
+    background-repeat: no-repeat;
+    background-size: 80%;
+    background-position: center bottom;
+}
+
+.involved-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    width: 100%;
+
+    margin-top: 100px;
+    margin-right: auto;
+    margin-left: auto;
+
+    background-image: url("./images/treesinv.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center bottom;
+}
+
+.involved h2 {
+    font-family: 'Begum Semibold';
+    font-size: 48px;
+
+    margin-top: 80px;
+    margin-bottom: 50px;
+
+    color: white;
+}
+
+.involved p {
+    max-width: 940px;
+    width: 100%;
+
+    font-size: 18px;
+    text-align: center;
+    color: white;
+
+    margin-bottom: 50px;
+}
+
+.involved input {
+    background-color: #ECB942;
+    border: none;
+    border-radius: 8px;
+
+    font-size: 18px;
+    font-weight: 500;
+    padding: 15px 45px;
+    margin-bottom: 80px;
+
+    max-width: 250px;
+    width: 100%;
+
+}
+
+
+/* contacts */
+.contacts {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 50px;
+
+    font-size: 22px;
+
+    max-width: 1600px;
+}
+
+.tel {
+    display: flex;
+    flex-direction: column;
+
+    padding-top: 30px;
+    padding-bottom: 25px;
+}
+
+address {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+
+    padding-top: 25px;
+
+    font-family: 'Begum Semibold';
+    font-size: 25px;
+}
+
+address a {
+    position: relative;;
+    display: inline-block;
+    color: black;
+    text-decoration: none;
+    font-style: normal;
+
+    margin-left: 50px;
+}
+
+address a::before {
+    position: absolute;
+    display: block;
+    content: '';
+    background-image: url(./images/phone.svg);
+    background-repeat: no-repeat;
+    width: 44px;
+    height: 44px;
+    left: -60px;
+    top: -5px;
+}
+
+.social {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    margin-top: 30px;
+}
+
+.social p {
+    padding-bottom: 25px;
+}
+
+.social-list {
+    display: flex;
+    justify-content: space-between;
+}
+
+.social-list li {
+    padding: 10px;
+}
+
+
+
+/* footer */
+footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    box-shadow: inset 0 1px #E5E5E5;
+}
+
+.footer-nav {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+    margin-left: auto;
+    margin-right: auto;
+
+    max-width: 1600px;
+    width: 100%;
+
+    padding-top: 60px;
+    padding-bottom: 90px;
+}
+
+.footer-nav a {
+    display: inline-block;
+    color: black;
+    text-decoration: none;
+}
+
+.footer-nav h4 {
+    margin-bottom: 30px;
+
+    font-size: 18px;
+    letter-spacing: 2px;
+}
+
+.footer-nav-links,
+.download-list {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footer-nav-links li {
+    padding-bottom: 16px;
+}
+
+.nav-company {
+    margin-right: 140px;
+}
+
+.download-list li {
+    margin-right: 20px;
+}
