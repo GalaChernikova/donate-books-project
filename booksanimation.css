@@ -5,11 +5,11 @@
     background-repeat: no-repeat;
     background-position: center center;
 
-    transition: all 0.3s ease-out;
+    transition: all 0.5s ease-out;
 }
 
 .header-nav-list a:hover {
-    font-size: 20px;
+    font-size: 18px;
     letter-spacing: 1px;
 
     transition: all 0.3s ease-out;
@@ -29,26 +29,12 @@
 
 
 /* donate */
-h1:hover {
-    font-size: 68px;
-
-    transition: all 0.3s ease-out;
-}
-
 .donate-info a:hover {
     max-width: 130px;
     font-size: 20px;
     font-weight: 600;
 
     transition: all 0.3s ease-out;
-}
-
-.donate-info p:hover {
-    font-size: 20px;
-    font-weight: 600;
-    letter-spacing: 1px;
-
-    transition: all 0.5s ease-out;
 }
 
 .donate-info input:hover {
@@ -65,39 +51,11 @@ h1:hover {
     transition: all 0.5s ease-out;
 }
 
-.donate-numbers p:hover {
-    font-size: 20px;
-
-    transition: all 0.5s ease-out;
-}
 
 
 
 
 /* info */
-.info h3:hover {
-    font-size: 42px;
-
-    transition: all 0.5s ease-out;
-}
-
-.info p:hover {
-    font-size: 20px;
-    font-weight: 600;
-
-    transition: all 0.5s ease-out;
-}
-
-.info a:hover {
-    font-size: 26px;
-    text-decoration: none;
-    letter-spacing: 2px;
-    color: white;
-    text-shadow: 0 2px 2px rgb(148, 148, 148);
-
-    transition: all 0.5s ease-out;
-}
-
 .info .trees:hover,
 .info .edu:hover,
 .info .charity:hover {
@@ -106,37 +64,11 @@ h1:hover {
     background-size: 100%;
     background-position: center bottom;
 
-    transition: all 0.5s ease-out;
+    transition: all 0.7s ease-out;
 } 
 
 
 /* work */
-.work img:hover {
-    margin-right: 80px;
-
-    transition: all 0.5s ease-out;
-}
-
-.work-info h2:hover {
-    font-size: 54px;
-
-    transition: all 0.5s ease-out;
-}
-
-.work-info-list li:hover {
-    font-size: 26px;
-
-    transition: all 0.5s ease-out;
-}
-
-.work-info p:hover {
-    font-size: 20px;
-    font-weight: 600;
-    letter-spacing: 1px;
-
-    transition: all 0.5s ease-out;
-}
-
 .work-info input:hover {
     max-width: 250px;
     padding: 20px 50px;
@@ -148,42 +80,6 @@ h1:hover {
 
 
 /* mission */
-.mission-info:hover {
-    margin-right: 60px;
-
-    transition: all 0.5s ease-out;
-}
-
-.mission-info h2:hover {
-    font-size: 54px;
-
-    transition: all 0.5s ease-out;
-}
-
-.mission-info p:hover {
-    font-size: 20px;
-    font-weight: 600;
-    margin-right: 20px;
-
-    transition: all 0.5s ease-out;
-}
-
-.mission-stat-list h2:hover {
-    font-size: 42px;
-
-    transition: all 0.5s ease-out;
-}
-
-.mission-stat-list p:hover {
-    font-size: 20px;
-    font-weight: 600;
-    letter-spacing: 1px;
-
-    margin-right: 20px;
-
-    transition: all 0.5s ease-out;
-}
-
 .trees-planted-scale .progress-container::before {
     animation: progress-tree 3s infinite;
 }
@@ -214,12 +110,6 @@ h1:hover {
 
 
 /* partners */
-.partners h2:hover {
-    font-size: 54px;
-
-    transition: all 0.5s ease-out; 
-}
-
 .partners-list li:hover {
     background-image: url("./images/partnersbckgr.svg");
     background-size: 100%;
@@ -232,20 +122,6 @@ h1:hover {
 
 
 /* involved */
-.involved h2:hover {
-    font-size: 54px;
-
-    transition: all 0.5s ease-out;
-}
-
-.involved p:hover {
-    font-size: 20px;
-    font-weight: 600;
-    letter-spacing: 1px;
-
-    transition: all 0.5s ease-out;
-}
-
 .involved input:hover {
     min-width: 280px;
     padding: 20px 50px;
@@ -257,15 +133,8 @@ h1:hover {
 
 
 /* contacts */
-.contacts p:hover {
-    font-size: 26px;
-    font-weight: 600;
-
-    transition: all 0.5s ease-out;
-}
-
 address a:hover {
-    font-size: 30px;
+    font-size: 28px;
 
     transition: all 0.5s ease-out;
 }
@@ -279,15 +148,9 @@ address a:hover {
 
 
 /* footer */
-.footer-nav h4:hover {
-    font-size: 22px;
-
-    transition: all 0.3s ease-out;
-}
-
 .company-list li:hover,
 .nav-resources li:hover {
-    font-size: 20px;
+    font-size: 18px;
 
     transition: all 0.3s ease-out;
 }
